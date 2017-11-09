@@ -1,9 +1,9 @@
-<%= form_for(@student) do %>
+<%= form_for(@student) do |s| %>
   <label>First Name:</label><br>
-  <%= text_field :first_name %><br>
+  <%= s.text_field :first_name %><br>
 
   <label>Last Name: </label><br>
-  <%= text_field :last_name %><br>
+  <%= s.text_field :last_name %><br>
 
-  <%= submit_tag "Submit Student" %>
+  <%= s.submit %>
 <% end %>
