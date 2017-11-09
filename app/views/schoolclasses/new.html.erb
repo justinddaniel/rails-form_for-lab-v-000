@@ -1,9 +1,9 @@
-<%= form_for school_class_path(@schoolclass) do %>
+<%= form_for school_class_path(@schoolclass) do |s| %>
   <label>Class Title:</label><br>
-  <%= text_field :title %><br>
+  <%= s.text_field :title %><br>
 
   <label>Room Number:</label><br>
-  <%= text_field :room_number %><br>
+  <%= s.text_field :room_number %><br>
 
-  <%= submit_tag "Submit SchoolClass" %>
+  <%= s.submit %>
 <% end %>
